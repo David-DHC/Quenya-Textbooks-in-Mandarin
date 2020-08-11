@@ -1,4 +1,3 @@
-# Quenya Textbooks in Mandarin
 （声明：这份Quenya汉化版教程，是由Nolo-Anai从Ardalambion站内的Quenya教程整理并汉化而来的，仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系作者进行讨论。）
 
 <h4>目录：<h4>
