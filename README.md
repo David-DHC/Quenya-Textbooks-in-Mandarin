@@ -1,6 +1,6 @@
 <h3>声明：</h3>
-  这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由Nolo-Anai整理为10讲，并翻译为汉语。
-  本教程仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系译者进行讨论。
+  这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由Nolo-Anai整理为10讲，并翻译为汉语。<br>
+  本教程仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系译者进行讨论。<br>
   本教程仅涉及Quenya语法学习。如需查询Quenya单词，请移步Parf Edhellen站：elfdict.com，或在Ardalambion站寻找相应资源。
 
 <h3>目录：</h3>
@@ -12,7 +12,7 @@
   5. 代词与代词后缀 ./5.html
   6. 名词的格变换、介词 ./6.html
   7. 动名词、不定式与分词 ./7.html
-  8. 否定句、祈使句与无人称句 ./8.html
+  8. 否定句、祈使句与无人称句 ./8.html <br>
   （未完待续）
 
 <h3>阅读指南：</h3>
