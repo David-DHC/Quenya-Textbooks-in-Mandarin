@@ -1,4 +1,7 @@
-（声明：这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由Nolo-Anai整理为10讲，并翻译为汉语。本教程仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系译者进行讨论。）
+<h3>声明：</h3>
+  这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由Nolo-Anai整理为10讲，并翻译为汉语。
+  本教程仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系译者进行讨论。
+  本教程仅涉及Quenya语法学习。如需查询Quenya单词，请移步Parf Edhellen站：elfdict.com。
 
 <h3>目录：</h3>
   0. 不规则词形表 ./0.html<br>
