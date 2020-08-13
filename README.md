@@ -1,19 +1,20 @@
 <h3>声明：</h3>
-  这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由Nolo-Anai整理为10讲，并翻译为汉语。<br>
+  这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由Nolofinwë D.整理为10讲，并翻译为汉语。<br>
+  翻译过程中，Anairë W.做出了重要的贡献，在此致谢。
   本教程仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系译者进行讨论。<br>
-  本教程仅涉及Quenya语法学习。如需查询Quenya单词，请移步Parf Edhellen站：elfdict.com，或在Ardalambion站寻找相应资源。
+  本教程仅涉及Quenya语法学习。如需查询Quenya单词，请移步Parf Edhellen站：elfdict.com，或在Ardalambion站寻找相应资源。如需学习更加精准的Quenya语音，译者建议先行学习意大利语和德语的发音规则。
 
 <h3>目录：</h3>
-  0. 不规则词形表 ./0.html
-  1. 语音及拼写规则 ./1.html
+  1. 语音与拼写 ./1.html
   2. 冠词与名词 ./2.html
-  3. 形容词与副词 ./3.html
+  3. 形容词、副词、连词、数词 ./3.html
   4. 动词及其时态 ./4.html
   5. 代词与关系词 ./5.html
   6. 名词的格变换、介词 ./6.html
   7. 动名词、不定式与分词 ./7.html
-  8. 否定句、祈使句与无人称句 ./8.html
+  8. 否定句、祈使句、疑问句、形式主语、名词性从句、定语从句 ./8.html
   9. 其他内容 ./9.html
+  10. 不规则词形表（附录） ./0.html
 
 <h3>阅读指南：</h3>
   1. 红色部分为重点内容；蓝色部分是注释内容。深色模式下，蓝色可能会显示为紫色。
