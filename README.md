@@ -6,16 +6,25 @@
   在20讲课程以外，Fauskanger先生又撰写了额外的附录，其中包括对一些未定结论的探讨，以及一份比第10讲更加详尽的不规则词形表。如需阅读这份附录与20讲课程的提纲，请联系译者。  
 
 <h3>目录：</h3>
-  1. 语音与拼写 ./1.html
-  2. 冠词与名词 ./2.html
-  3. 形容词、副词、连词、数词 ./3.html
-  4. 动词及其时态 ./4.html
-  5. 代词与关系词 ./5.html
-  6. 名词的格变换、介词 ./6.html
-  7. 动名词、不定式与分词 ./7.html
-  8. 否定句、祈使句、疑问句、形式主语、名词性从句、定语从句 ./8.html
-  9. 其他内容 ./9.html
-  10. 不规则词形表（附录） ./0.html
+  [1. 语音与拼写] (david-dhc.github.io/1.html)
+  
+  [2. 冠词与名词] (david-dhc.github.io/2.html)
+  
+  [3. 形容词、副词、连词、数词] (david-dhc.github.io/3.html)
+  
+  [4. 动词及其时态] (david-dhc.github.io/4.html)
+  
+  [5. 代词与关系词] (david-dhc.github.io/5.html)
+  
+  [6. 名词的格变换、介词] (david-dhc.github.io/6.html)
+  
+  [7. 动名词、不定式与分词] (david-dhc.github.io/7.html)
+  
+  [8. 否定句、祈使句、疑问句、形式主语、名词性从句、定语从句] (david-dhc.github.io/8.html)
+  
+  [9. 其他内容] (david-dhc.github.io/9.html)
+  
+  [10. 不规则词形表（附录）] (david-dhc.github.io/0.html)
 
 <h3>阅读指南：</h3>
   1. 红色部分为重点内容；蓝色部分是注释内容。深色模式下，蓝色可能会显示为紫色。
