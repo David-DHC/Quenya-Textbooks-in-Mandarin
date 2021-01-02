@@ -7,25 +7,25 @@
 
 <h3>目录：</h3>
 
-  [1. 语音与拼写](david-dhc.github.io/1.html)
+  [1. 语音与拼写](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/1.html)
   
-  [2. 冠词与名词](david-dhc.github.io/2.html)
+  [2. 冠词与名词](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/2.html)
   
-  [3. 形容词、副词、连词、数词](david-dhc.github.io/3.html)
+  [3. 形容词、副词、连词、数词](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/3.html)
   
-  [4. 动词及其时态](david-dhc.github.io/4.html)
+  [4. 动词及其时态](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/4.html)
   
-  [5. 代词与关系词](david-dhc.github.io/5.html)
+  [5. 代词与关系词](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/5.html)
   
-  [6. 名词的格变换、介词](david-dhc.github.io/6.html)
+  [6. 名词的格变换、介词](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/6.html)
   
-  [7. 动名词、不定式与分词](david-dhc.github.io/7.html)
+  [7. 动名词、不定式与分词](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/7.html)
   
-  [8. 否定句、祈使句、疑问句、形式主语、名词性从句、定语从句](david-dhc.github.io/8.html)
+  [8. 否定句、祈使句、疑问句、形式主语、名词性从句、定语从句](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/8.html)
   
-  [9. 其他内容](david-dhc.github.io/9.html)
+  [9. 其他内容](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/9.html)
   
-  [10. 不规则词形表（附录）](david-dhc.github.io/0.html)
+  [10. 不规则词形表（附录）](https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/0.html)
 
 <h3>阅读指南：</h3>
   1. 红色部分为重点内容；蓝色部分是注释内容。深色模式下，蓝色可能会显示为紫色。
