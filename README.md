@@ -1,7 +1,5 @@
 <h3>声明：</h3>
-  这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由Nolofinwë D.整理为10讲，并翻译为汉语。
-  
-  翻译过程中，Anairë W.做出了重要的贡献，在此致谢。
+  这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由David D.整理为10讲，并翻译成汉语。
   
   本教程仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系译者进行讨论。
   
