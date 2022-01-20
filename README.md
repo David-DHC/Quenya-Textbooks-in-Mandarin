@@ -1,6 +1,6 @@
 <h3>声明：</h3>
   这份Quenya汉化版教程，其英语原版为Helge K. Fauskanger在Ardalambion站内发布的Quenya courses （共20讲），由David D.整理为10讲，并翻译成汉语。本教程仅供同好学习之用，勿用于其他用途。文章中如有错误，欢迎联系译者进行讨论。<br>
-  本教程仅涉及Quenya语法学习。如需查询Quenya单词，请移步[Parf Edhellen](https://www.elfdict.com) ，或在[Ardalambion](https://folk.uib.no/hnohf/) 寻找相应资源。如需学习更加精准的Quenya语音，译者建议先行学习意大利语和德语的发音规则。在20讲课程以外，Fauskanger先生又撰写了额外的附录，其中包括对一些未定结论的探讨，以及一份比第10讲更加详尽的不规则词形表。  
+  本教程仅涉及Quenya语法学习。如需查询Quenya单词，请移步Parf Edhellen(www.elfdict.com)，或在Ardalambion(https://folk.uib.no/hnohf/) 寻找相应资源。如需学习更加精准的Quenya语音，译者建议先行学习意大利语和德语的发音规则。在20讲课程以外，Fauskanger先生又撰写了额外的附录，其中包括对一些未定结论的探讨，以及一份比第10讲更加详尽的不规则词形表。  
   
 <h3>关于版权问题：</h3>
   
