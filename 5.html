@@ -1,21 +1,24 @@
 <!doctype html>
-<html style='font-size:14px !important'>
+<html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>5. 代词与代词后缀</title><link href='https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext' rel='stylesheet' type='text/css' /><link href='https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
 @media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
@@ -64,7 +67,7 @@ div.hr:focus { cursor: none; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
 .md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
@@ -76,6 +79,7 @@ div.hr:focus { cursor: none; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
@@ -85,10 +89,10 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
@@ -99,6 +103,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
@@ -129,18 +134,9 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none 0s ease 0s; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
@@ -149,479 +145,701 @@ table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
 
-
-@include-when-export url(https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext);
-@include-when-export url(https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext);
 
 :root {
-	--control-text-color: #777;
+    --side-bar-bg-color: #d9ede5;
+	--control-text-color: #6B6B6B;
+	--active-file-bg-color: #ecf6f2;
+	--active-file-border-color: #6B6B6B;
+	--active-file-text-color: #202020;
+	--table-even-row-color:#f8fcfa;
+	--table-head-color:#d9ede5;
+	--deep-theme-color: #4eb289;
+	--code-block-bg-color: #0F111A;
 }
 
-/**
- * forked from pixyll.com
- * MIT license
- */
-
-h1,
-.h1,
-.f1 {
-	font-size: 2rem;
-	line-height: 2.5rem;
+/*serif*/
+/*monospace*/
+/*Chinese*/
+html{
+	font-size: 16px;
 }
-h2,
-.h2,
-.f2 {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-h3,
-.h3,
-.f3 {
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-}
-p,
-.p,
-.f4,
-h4,
-h5,
-h6,
-dl,
-ol,
-ul,
-pre[cid],
-div[cid],
-#typora-source {
-	font-size: 1.125rem;
-	line-height: 1.5rem;
-}
-
-h4 {
-	font-size: 1.13rem;
-}
-/*
- Pixyll
- A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
- Best served with BASSCSS (http://jxnblk.github.io/basscss)
- Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander MIT License http://opensource.org/licenses/MIT
-
-*/
 
 body {
-	font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
+  font-family: 'Lexend','Helvetica','SourceCodePro','NotoSansSC';
+	font-weight: normal;
 	line-height: 1.5rem;
-	font-weight: 400;
+	letter-spacing: 0;
+  margin: 0;
 }
 
 #write {
-	max-width: 914px;
-	color: #333;
+	max-width: 900px;
+  padding: 30px 50px 20px;
 }
 
-@media only screen and (min-width: 1400px) {
-	#write {
-		max-width: 1100px;
-	}
-}
-
-@media only screen and (min-width: 1700px) {
-	#write {
-		max-width: 1200px;
-	}
-}
-
-img {
-	width: auto;
-	max-width: 100%;
-}
-body {
-	font-size: 1.5rem;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-
-.ty-table-edit {
-	background: #ededed;
-}
-
-table {
-	width: 100%;
-	font-size: 1.125rem;
-}
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td,
-table > tfoot > tr > th,
-table > tfoot > tr > td {
-	padding: 12px;
-	line-height: 1.2;
-	vertical-align: top;
-	border-top: 1px solid #333;
-}
-table > thead > tr > th {
-	vertical-align: bottom;
-	border-bottom: 2px solid #333;
-}
-table > caption + thead > tr:first-child > th,
-table > caption + thead > tr:first-child > td,
-table > colgroup + thead > tr:first-child > th,
-table > colgroup + thead > tr:first-child > td,
-table > thead:first-child > tr:first-child > th,
-table > thead:first-child > tr:first-child > td {
-	border-top: 0;
-}
-table > tbody + tbody {
-	border-top: 2px solid #333;
-}
-p {
-	font-weight: 300;
-	line-height: 1.5;
-}
-abbr {
-	border-bottom: 1px black dotted;
-	cursor: help;
-}
-pre,
-code {
-	font-family: Menlo, Monaco, "Courier New", monospace;
-}
-
-code,
-.md-fences  {
-	color: #7a7a7a;
-}
-
-.md-fences {
-	padding: 1.125em;
-	margin-bottom: 0.88em;
-	font-size: 1rem;
-	border: 1px solid #7a7a7a;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
-}
-
-blockquote {
-	padding: 1.33em;
-	font-style: italic;
-	border-left: 5px solid #7a7a7a;
-	color: #555;
-}
-blockquote em {
-	color: #000;
-}
-blockquote footer {
-	font-size: .85rem;
-	font-style: normal;
-	background-color: #fff;
-	color: #7a7a7a;
-	border-color: transparent;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-	font-family: "Lato", 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: bold;
-	line-height: 1.2;
-	margin: 1em 0 0.5em;
-}
-@media screen and (min-width: 48em) {
-	.h1,
-	h1 {
-		font-size: 3.250rem;
-	}
-	.h2,
-	h2 {
-		font-size: 2.298rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.625rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.3rem;
-	}
-	#write>h4.md-focus:before,
-	#write>h5.md-focus:before,
-	#write>h6.md-focus:before{
-		top: 1px;
-	}
-	.p,
-	p,
-	li {
-		font-size: 1.25rem;
-		line-height: 1.8;
-	}
-	table {
-		font-size: 1.25rem;
-	}
-}
-@media (max-width: 48em) {
-	blockquote {
-		margin-left: 1rem;
-		margin-right: 0;
-		padding: 0.5em;
-	}
-	.h1,
-	h1 {
-		font-size: 2.827rem;
-	}
-	.h2,
-	h2 {
-		font-size: 1.999rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.413rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.3rem;
-	}
-}
-@media screen and (min-width: 64em) {
-	.h1,
-	h1 {
-		font-size: 4.498rem;
-	}
-	.h2,
-	h2 {
-		font-size: 2.29rem;
-	}
-	.h3,
-	h3 {
-		font-size: 1.9rem;
-	}
-	.h4,
-	h4 {
-		font-size: 1.591rem;
-	}
-	#write>h4.md-focus:before{
-		top:4px;
-	}
-}
-a {
-	color: #463F5C;
-	text-decoration: underline;
-}
-
-#write {
-	padding-top: 2rem;
+#write p{
+	text-align:left;
 }
 
 #write pre.md-meta-block {
-	min-height: 35px;
-	padding: 0.5em 1em;
-	white-space: pre;
-	border: 0px;
-
-	border-left: 30px #f8f8f8 solid;
-	border-right: 30px #f8f8f8 solid;
-	width: 100vw;
-	max-width: calc(100% + 60px);
-
-	margin-left: -30px;
-	margin-bottom: 2em;
-	margin-top: -2010px;
-	padding-top: 2000px;
-	padding-bottom: 10px;
-	line-height: 1.5em;
-	color: #7a7a7a;
-	background-color: #fafafa;
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: 300;
-	clear: both;
-	padding-left: 0;
-	font-size:1.125rem;
+	padding: 1rem;
+	font-size: 85%;
+	line-height: 1.45;
+	background-color: #f7f7f7;
+	border: 0;
+	border-radius: 3px;
+	color: #777777;
+	margin-top: 0 !important;
 }
+
 .md-image>.md-meta {
-	color: #463F5C
-}
-.footnotes {
-	font-size:1.1rem;
-}
-.md-tag {
-	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-}
-.code-tooltip {
-	background: white;
-}
-.code-tooltip-content {
-	font-size: 1.1rem;
+  color: #777777;
+  font-size: 0.9rem;
+	font-family: 'Lexend';
+  padding: 4px 0;
 }
 
-.task-list{
-	padding-left: 0;
+
+@media print {
+  html,body {
+    font-size: 14px;
+  }
+  
+  .md-fences {
+    line-height: 1.2rem;
+  }
+
+
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  pre {
+    word-wrap: break-word;
+  }
+  
+}
+@page {
+  size: A4; 
+  margin: 8mm 0mm;
 }
 
-.md-task-list-item {
-	padding-left:34px;
+/*toc*/
+.md-toc { 
+  margin-top:20px;
+  padding-bottom:20px;
+	color: var(--deep-theme-color);
 }
 
-.md-task-list-item > input{
-	width: 1.25rem;
-	height: 1.25rem;
+a {
+	color: var(--deep-theme-color);
+	text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*headers*/
+h1,h2,h3,h4,h5,h6 {
 	display: block;
-	-webkit-appearance: initial;
-	top: -0.2rem;
-	margin-left: -1.6em;
-	margin-top: calc(1rem - 7px);
-	border: none;
+	font-weight:bold;
 }
 
-.md-task-list-item > input:focus{
-	outline: none;
-	box-shadow: none;
+h1 {
+	font-size: 1.8em;
+  line-height: 110%;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
 }
 
-.md-task-list-item > input:before{
-	border: 1px solid #555;
-	border-radius: 1.5rem;
-	width: 1.5rem;
-	height: 1.5rem;
-	background: #fff;
-	content: ' ';
-	transition: background-color 200ms ease-in-out;
-	display: block;
+h2 {
+	font-size: 1.5em;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
 }
 
-.md-task-list-item > input:checked:before,
-.md-task-list-item > input[checked]:before{
-	background: #333;
-	border-width: 2px;
-	display:inline-block;
-	transition: background-color 200ms ease-in-out;
+h3 {
+	font-size: 1.17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
-.md-task-list-item > input:checked:after,
-.md-task-list-item > input[checked]:after {
-	opacity: 1;
+h4 {
+	font-size: 1em;
+	margin-top: 1.33em;
+	margin-bottom: 1.33em;
 }
 
-.md-task-list-item > input:after {
-	opacity: 1;
-	-webkit-transition: opacity 0.05s ease-in-out;
-	-moz-transition: opacity 0.05s ease-in-out;
-	transition: opacity 0.05s ease-in-out;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	position: absolute;
-	top: 0.4375rem;
-	left: 0.28125rem;
-	width: 0.9375rem;
-	height: 0.5rem;
-	border: 3px solid #fff;
-	border-top: 0;
-	border-right: 0;
-	content: ' ';
-	opacity: 0;
-}
-
-.md-tag {
-	color:inherit;
-}
-
-.md-toc:focus .md-toc-content{
-	margin-top: 19px;
-}
-
-#typora-sidebar {
-	font-size:1rem !important;
-}
-
-.html-for-mac #typora-sidebar {
-	background-color:white;
-}
-
-.outline-content li, .outline-content ul {
-	font-size:1rem !important;
-}
-
-.outline-title {
-	line-height: inherit;
-	margin-top: 10px;
-}
-
-.outline-expander {
-	width: 18px;
-}
-
-.outline-expander:before {
- 	content: "+";
-	font-family: inherit;
-	color: rgb(108, 108, 108); 
-  	font-size: 1.5rem;
- 	top: 0.1rem;
-}
-
-.outline-expander:hover:before {
-	content: "+";
-}
-
-.outline-item-open>.outline-item>.outline-expander:before{
-	content: "-";
-}
-
-/** source code mode */
-#typora-source {
-	font-family: Courier, monospace;
-    color: #6A6A6A;
-}
-
-.os-windows #typora-source {
-	font-family: inherit;
-}
-
-.cm-s-typora-default .cm-header, 
-.cm-s-typora-default .cm-property,
-.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-	color: #428bca;
-}
-
-.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+h5 {
+	font-size: 1em;
+	margin-top: 1.33em;
+	margin-bottom: 1.33em;
 	color: #777777;
 }
 
-.md-diagram-panel {
-	margin-top: 24px;
-	margin-left: -1.2em;
+h6 {
+	font-size: 1em;
+	margin-top: 1.33em;
+	margin-bottom: 1.33em;
+	color: #adadad;
 }
 
-.md-mathjax-midline {
-	background: #fafafa;
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+	margin: 0.5rem 0;
 }
 
-.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
-.enable-diagrams pre.md-fences[lang="flow"] .code-tooltip,
-.enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip {
-    bottom: -3.4em;
+/*table*/
+table {
+	border-collapse: collapse;
+	padding: 0;
+  word-break: initial;
+	width: 100%;
 }
 
-.dropdown-menu .divider {
-	border-color: #e5e5e5;
+table tr:nth-child(even){
+    background-color: var(--table-even-row-color);
+}
+
+thead{
+	background-color: var(--table-head-color);
+}
+
+table th{
+	text-align: center;
+	padding:6px 13px;
+	border: 1px solid var(--table-head-color);
+}
+
+table td{
+	padding:6px 13px;
+	border: 1px solid var(--table-head-color);
+}
+table tr{
+	padding:6px 13px;
+	border: 1px solid var(--table-head-color);
+}
+
+/*blockquote*/
+blockquote {
+	border-left: 0.2rem solid var(--side-bar-bg-color);
+	color: #777777;
+	font-family: 'Lexend','NotoSansSC';
+	font-size: 0.9rem;
+	padding-left: 2rem;
 }
 
 
-</style>
+/*list*/
+
+li p.first {
+  display: inline-block;
+}
+ul,
+ol {
+  padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+  margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+.md-task-list-item:hover > input:before,
+input[type='checkbox']:hover:before {
+	opacity: 1;
+	transition: 0.5s;
+	background-color: var(--side-bar-bg-color);
+}
+
+.task-list-item input::before {
+  content: "";
+  display: inline-block;
+	border-radius: 1.1rem;
+  vertical-align: middle;
+  border: 1.2px solid var(--deep-theme-color);
+  background-color: #ffffff;
+	width: 1.1rem;
+  height: 1.1rem;
+	margin-left: -0.1rem;
+  margin-right: 0.1rem;
+  margin-top: -0.68rem; 
+}
+
+.task-list-item input:checked::before {
+  padding-left: 0.125em;
+  content: '✔';
+  color:white;
+	background-color: var(--deep-theme-color);
+  font-size: 0.8rem;
+  line-height: 0.95rem;
+  margin-top: -0.68rem;
+	transition: background-color 200ms ease-in-out;
+}
+
+.task-list-done {
+    text-decoration: line-through;
+    color: #adadad;
+}
+
+hr {
+	border-style: none;
+  border-top-style: solid;
+  border-color: #e7e7e7;
+  border-width: 1px;
+	margin: 2rem 0;
+}
+
+/*highlight*/
+#write mark {
+	background-color: #c7ffe8;
+	border-radius: 2px;
+	color: black;
+	padding: 0 4px;
+	margin: 0 2px;
+}
+
+/*inline code*/
+#write code,tt {
+	padding: 0.6px 4px;
+	border-radius: 2px;
+	background-color: #f1f1f1;
+	font-family: 'SourceCodePro',Consolas,Courier,'NotoSansSC';
+	font-size: 0.9rem;
+	color: var(--code-block-bg-color);
+	margin: 0 2px;
+}
+
+/*footnote*/
+#write .md-footnote {
+	color: #777777;
+	background-color: #f7f7f7;
+}
+
+/*source code mode*/
+.cm-s-typora-default .cm-header {
+	color:var(--code-block-bg-color);
+}
+.cm-s-typora-default .cm-link {
+	color:var(--deep-theme-color);
+
+}
+
+
+/*code block*/
+#write .md-fences {
+  font-size: 1rem;
+  margin: 0.2em 0;
+  padding: 0.5em;
+  border-radius: 3px;
+	font-size: 0.9em;
+  font-family: 'SourceCodePro',Consolas,Courier,'NotoSansSC';
+  background-color: var(--code-block-bg-color);
+  color: #A9B7C6;
+  border: none;
+	text-shadow: none;
+}
+
+.md-fences .code-tooltip {
+	background-color: var(--code-block-bg-color);
+}
+
+/*
+  Name:       material-ocean
+  Author:     Mattia Astorino (http://github.com/equinusocio)
+  Website:    https://material-theme.site/
+*/
+
+.cm-s-inner.CodeMirror {
+  background-color: #0F111A;
+  color: #8F93A2;
+}
+
+.cm-s-inner .CodeMirror-gutters {
+  background: #0F111A;
+  color: #464B5D;
+  border: none;
+}
+
+.cm-s-inner .CodeMirror-linenumber {color: #464B5D;}
+.cm-s-inner .CodeMirror-guttermarker { color: #FFEE80; }
+.cm-s-inner .CodeMirror-guttermarker-subtle { color: #D0D0D0; }
+
+/*
+.cm-s-inner .CodeMirror-cursor {
+  border-left: 1px solid #FFCC00;
+}
+.cm-s-inner.cm-fat-cursor .CodeMirror-cursor {
+  background-color: #FFCC00 !important;
+}
+.cm-s-inner .cm-animate-fat-cursor {
+  background-color: #FFCC00 !important;
+}
+*/
+
+.cm-s-inner .CodeMirror-cursor { border-left: 1px solid #A9B7C6; }
+.cm-s-inner div.CodeMirror-cursor { border-left: 1px solid #ffffff; }
+.cm-s-inner div.CodeMirror-selected {
+  background: rgba(113, 124, 180, 0.2);
+}
+
+.cm-s-inner.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(113, 124, 180, 0.2);
+}
+
+.cm-s-inner .CodeMirror-selected{ background: #214283 !important; }
+.cm-s-inner .CodeMirror-selectedtext { background: #214283 !important; }
+.cm-overlay.CodeMirror-selectedtext { background: #B5D6FC !important; }
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line>span::selection,
+.cm-s-inner .CodeMirror-line>span>span::selection {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line>span::-moz-selection,
+.cm-s-inner .CodeMirror-line>span>span::-moz-selection {
+  background: rgba(128, 203, 196, 0.2);
+}
+
+/* .cm-s-inner .CodeMirror-activeline-background {
+  background: rgba(0, 0, 0, 0.5);
+} */
+
+.cm-s-inner .cm-keyword {
+  color: #C792EA;
+}
+
+.cm-s-inner .cm-operator {
+  color: #89DDFF;
+}
+
+.cm-s-inner .cm-variable-2 {
+  color: #EEFFFF;
+}
+
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #f07178;
+}
+
+.cm-s-inner .cm-builtin {
+  color: #FFCB6B;
+}
+
+.cm-s-inner .cm-atom {
+  color: #F78C6C;
+}
+
+.cm-s-inner .cm-number {
+  color: #FF5370;
+}
+
+.cm-s-inner .cm-def {
+  color: #82AAFF;
+}
+
+.cm-s-inner .cm-string {
+  color: #C3E88D;
+}
+
+.cm-s-inner .cm-string-2 {
+  color: #f07178;
+}
+
+.cm-s-inner .cm-comment {
+  color: #585d6d;
+}
+
+.cm-s-inner .cm-variable {
+  color: #f07178;
+}
+
+.cm-s-inner .cm-tag {
+  color: #FF5370;
+}
+
+.cm-s-inner .cm-meta {
+  color: #FFCB6B;
+}
+
+.cm-s-inner .cm-attribute {
+  color: #C792EA;
+}
+
+.cm-s-inner .cm-property {
+  color: #C792EA;
+}
+
+.cm-s-inner .cm-qualifier {
+  color: #DECB6B;
+}
+
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type {
+  color: #DECB6B;
+}
+
+
+.cm-s-inner .cm-error {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: #FF5370;
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+
+@import "";
+
+:root {
+  
+  --bg-color: #272729;
+  --text-color: #cccccc;
+  --blur-text-color: #818286;
+  --side-bar-bg-color: #232325;
+  --control-text-color: #7a7b7e;
+  --active-file-bg-color: #19191b;
+  --active-file-border-color: #4eb289;
+  --active-file-text-color: #4eb289;
+  --table-head-color:#232325;
+  --mint-light-color:#d9ede5;
+  --deep-theme-color: #4eb289;
+  --code-block-bg-color: #0F111A;
+  --rawblock-edit-panel-bd: #232325;
+  --footer-box:#6a6b6e;
+  --select-text-bg-color:#7a88a3;
+  --item-hover-bg-color: #56575a;
+  --window-border: 1px solid #39393a;
+  --highlight-color:#4eb289;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 8px;
+  background-color: var(--control-text-color);
+}
+
+#write pre.md-meta-block {
+	background-color: var(--item-hover-bg-color);
+	color: var(--text-color);
+}
+
+/*source code mode*/
+.cm-s-typora-default .cm-header {
+	color:var(--mint-light-color);
+}
+.cm-s-typora-default .cm-link {
+	color:var(--deep-theme-color);
+}
+
+#toggle-sourceview-btn {
+  background: var(--bg-color)!important;
+}
+
+#toggle-sourceview-btn:hover {
+  background: #39393b;
+}
+
+/*table*/
+table tr:nth-child(even){
+    background-color: var(--bg-color);
+}
+
+thead{
+	background-color: var(--table-head-color);
+  color: var(--deep-theme-color);
+}
+
+table th{
+	border: 1px solid var(--mint-light-color);
+}
+
+table td{
+	border: 1px solid var(--mint-light-color);
+}
+table tr{
+	border: 1px solid var(--mint-light-color);
+}
+
+
+/* footer */
+footer.ty-footer {
+  border: none;
+}
+
+.footer-item:hover {
+  background-color: var(--footer-box);
+}
+
+/*megamenu*/
+.megamenu-menu {
+  box-shadow: none;
+  background-color:var(--side-bar-bg-color);
+}
+
+.megamenu-content,
+.megamenu-opened header {
+    background: var(--bg-color);
+    background-image: none;
+}
+
+.megamenu-menu-panel table td:nth-child(1) {
+  background-color: var(--bg-color);
+}
+
+.megamenu-menu-panel table td:nth-child(2) {
+  background-color: var(--bg-color);
+}
+
+#recent-file-panel-action-btn {
+  background-color: var(--bg-color);
+}
+
+/* preferences */
+.ty-preferences .window-header{
+  background-color: var(--active-file-bg-color);
+}
+
+.ty-preferences .nav-group-item:hover {
+  background-color: var(--item-hover-bg-color);
+}
+
+.btn:hover,
+.button-hover,
+.md-image-btn:hover {
+  background-color:#39393a !important;
+  color: var(--text-color);
+}
+
+.menu-style-btn:hover {
+  background-color: var(--item-hover-bg-color);
+  border: none;
+}
+
+/*blockquote*/
+blockquote {
+	border-left: 0.2rem solid var(--deep-theme-color);
+	color: #919191;
+}
+
+/*checkbox*/
+.md-task-list-item:hover > input:before,
+input[type='checkbox']:hover:before {
+	background-color: #505052;
+}
+
+.task-list-item input::before {
+  border: 1.2px solid var(--deep-theme-color);
+  background-color:var(--bg-color);
+}
+
+.task-list-item input:checked::before {
+  color:var(--bg-color);
+  font-weight: 600;
+	background-color: var(--deep-theme-color);
+}
+
+.task-list-done {
+  color: #777777;
+}
+
+/*highlight*/
+#write mark {
+	background-color: var(--highlight-color);
+	color:#fff;
+}
+
+/*inline code*/
+#write code,tt {
+  padding: 2px 4px;
+	border-radius: 2px;
+	background-color: var(--code-block-bg-color);
+	color: var(--text-color);
+  margin: 0 2px;
+}
+
+/*footnote*/
+#write .md-footnote {
+	color: #777777;
+	background-color: var(--code-block-bg-color);
+}
+
+
+
+</style><title>5. 代词与代词后缀</title>
 </head>
-<body class='typora-export os-windows' >
-<div  id='write'  class = ''><h2><a name="代词与代词后缀" class="md-header-anchor"></a><span>代词与代词后缀</span></h2><hr /><ol start='' ><li><p><span>独立人称代词：</span></p><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><span>ni</span></td><td style='text-align:center;' ><span>lë (主格) / tyë(宾格)</span></td><td style='text-align:center;' ><span>ta</span></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><span>vë (incl.) / më (excl.)</span></td><td style='text-align:center;' ><span>lë (主格) / tyë (宾格)</span></td><td style='text-align:center;' ><span>tië (主格) / të(宾格)</span></td></tr></tbody></table></figure><p><font color = blue><span>注释1：如无特殊标注，人称代词一般没有主格和宾格的区分。</span></font></p><p><font color = blue><span>注释2：第一人称复数代词，分为“包括听话者” (incl.) 和“不包括听话者” (excl.) 两种，类似于汉语“咱们”和“我们”。下同。</span></font></p><p><font color = blue><span>注释3：请尽量避免使用独立人称代词。</span></font></p><p>&nbsp;</p></li><li><p><span>反身代词：</span></p><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><span>imni</span></td><td style='text-align:center;' ><span>imlë (fml.) / intyë (infml.)</span></td><td style='text-align:center;' ><span>insa</span></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><span>inwë (incl.) / immë (excl.)</span></td><td style='text-align:center;' ><span>indë</span></td><td style='text-align:center;' ><span>intë</span></td></tr></tbody></table></figure><p><font color = blue><span>注释1：imlë和intyë的区别，类似于yourself和thyself。</span></font></p><p><font color = blue><span>注释2：以上反身代词只能指代人称代词，指代名词时则用</span><strong><span>immo</span></strong><span>/</span><strong><span>imma</span></strong><span>，前者指人，后者指其他事物。</span></font></p><p>&nbsp;</p></li><li><p><span>人称代词后缀：</span></p><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><span>-nyë (-n)</span></td><td style='text-align:center;' ><span>-llë (-l)</span></td><td style='text-align:center;' ><span>-së (-s)</span></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><span>-lvë (incl.) / -lmë (excl.)</span></td><td style='text-align:center;' ><span>-lyë (-l)</span></td><td style='text-align:center;' ><span>-ntë (主格)，-t (宾格)</span></td></tr></tbody></table></figure><p><font color = blue><span>注释1：第二人称单数代词也可用-lyë作为结尾，它和-llë的区别类似于thou和you。</span></font></p><p><font color = blue><span>注释2：当代词后缀后没有其他后缀时，可以使用括号中标注的缩略形式。</span></font></p><p>&nbsp;</p></li><li><p><span>物主代词后缀：</span></p><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><span>-nya</span></td><td style='text-align:center;' ><span>-lya</span></td><td style='text-align:center;' ><span>-rya</span></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><span>-lva (incl.) / -lma (excl.)</span></td><td style='text-align:center;' ><span>-lya</span></td><td style='text-align:center;' ><span>-nta</span></td></tr></tbody></table></figure><p><font color = blue><span>注释1：对以-r结尾的复数名词和以-t结尾的双数名词加后缀时，请参考6.2 “同时添加格后缀与物主代词后缀的方法”。</span></font></p><p>&nbsp;</p></li><li><p><span>不定代词与指示代词：</span></p><ol><li><p><span>不定代词：</span><strong><span>quen</span></strong><span> &quot;one&quot;。</span></p></li><li><p><span>指示代词：</span></p><ol start='' ><li><p><span>作代词：</span><strong><span>sin</span></strong><span> &quot;this&quot;，</span><strong><span>ta</span></strong><span>&quot;that&quot;。</span></p></li><li><p><span>作形容词：</span><strong><span>sina</span></strong><span> &quot;this&quot;，</span><strong><span>tana</span></strong><span> &quot;that&quot;，</span><strong><span>enta</span></strong><span> &quot;that&quot; （空间上高度远离对话双方），</span><strong><span>yana</span></strong><span> &quot;that&quot; （时间上高度远离说话双方）。</span></p><p><font color = blue><span>注释：</span><strong><span>sina</span></strong><span>，</span><strong><span>tana</span></strong><span>，</span><strong><span>enta</span></strong><span>和</span><strong><span>yana</span></strong><span>永远放在中心词后面。</span></font></p><p>&nbsp;</p></li></ol></li></ol></li><li><p><span>限定词：</span></p><ol start='' ><li><p><strong><span>ilya</span></strong><span> &quot;each, all, every&quot;</span></p><ol start='' ><li><strong><span>ilu</span></strong><span> &quot;everything&quot;</span></li><li><strong><span>ma</span></strong><span> &quot;something, anyone&quot;</span></li><li><strong><span>munta</span></strong><span> &quot;nothing&quot;</span></li><li><strong><span>ilquen</span></strong><span> &quot;everyone&quot;</span></li><li><strong><span>mo</span></strong><span> &quot;someone, anyone&quot;</span></li><li><strong><span>alaquen</span></strong><span> &quot;no one&quot; </span><span>*</span></li></ol></li><li><p><strong><span>aiquen</span></strong><span> &quot;whoever&quot;</span></p><ol start='' ><li><strong><span>quië</span></strong><span> &quot;whenever&quot;</span></li><li><strong><span>aiqua</span></strong><span> &quot;whatever&quot; </span><span>*</span></li><li><strong><span>aimanen</span></strong><span> &quot;however&quot; </span><span>*</span></li></ol></li><li><p><strong><span>nótima</span></strong><span> &quot;some&quot; （只用作形容词）</span></p><ol start='' ><li><strong><span>exa</span></strong><span> &quot;other&quot; （只用作形容词）</span></li><li><strong><span>exë</span></strong><span> &quot;another&quot;</span></li><li><strong><span>i exë</span></strong><span> &quot;the other&quot;</span></li></ol></li></ol><p><font color = blue><span>注释：上述标星号者，均为后人根据Quenya构词法自创的新词，尚未得到验证。</span></font></p></li></ol></div>
-</body>
+<body class='typora-export typora-export-show-outline typora-export-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#代词与限定词">代词与限定词</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#i-独立人称代词">I. 独立人称代词</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#ii-反身代词">II. 反身代词</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#iii-人称代词后缀">III. 人称代词后缀</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#iv-物主代词后缀">IV. 物主代词后缀</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#v-不定代词">V. 不定代词</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#vi-指示代词">VI. 指示代词</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#vii-限定词">VII. 限定词</a></div><ul class="outline-children"></ul></li></ul></li></div></div><div id='write'  class=''><h2 id='代词与限定词'><span>代词与限定词</span></h2><hr /><blockquote><p><font color = slategrey><span>注释1：如无特殊标注，人称代词一般没有主格和宾格的区分。</span></font></p><p><font color = slategrey><span>注释2：第一人称复数代词，分为“包括听话者” (incl.) 和“不包括听话者” (excl.) 两种，类似于汉语“咱们”和“我们”。下同。</span></font></p></blockquote><p>&nbsp;</p><hr /><h3 id='i-独立人称代词'><span>I. 独立人称代词</span></h3><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><strong><span>ni</span></strong></td><td style='text-align:center;' ><strong><span>lë</span></strong><span> (主格) / </span><strong><span>tyë</span></strong><span>(宾格)</span></td><td style='text-align:center;' ><strong><span>ta</span></strong></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><strong><span>vë</span></strong><span> (incl.) / </span><strong><span>më</span></strong><span> (excl.)</span></td><td style='text-align:center;' ><strong><span>lë</span></strong><span> (主格) / </span><strong><span>tyë</span></strong><span> (宾格)</span></td><td style='text-align:center;' ><strong><span>tië</span></strong><span> (主格) / </span><strong><span>të</span></strong><span>(宾格)</span></td></tr></tbody></table></figure><blockquote><p><font color = slategrey><span>注释：请尽量避免使用独立人称代词。</span></font></p></blockquote><p>&nbsp;</p><hr /><h3 id='ii-反身代词'><span>II. 反身代词</span></h3><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><strong><span>imni</span></strong></td><td style='text-align:center;' ><strong><span>imlë</span></strong><span> (fml.) / </span><strong><span>intyë</span></strong><span> (infml.)</span></td><td style='text-align:center;' ><strong><span>insa</span></strong></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><strong><span>inwë</span></strong><span> (incl.) / </span><strong><span>immë</span></strong><span> (excl.)</span></td><td style='text-align:center;' ><strong><span>indë</span></strong></td><td style='text-align:center;' ><strong><span>intë</span></strong></td></tr></tbody></table></figure><blockquote><p><font color = slategrey><span>注释1：</span><strong><span>imlë</span></strong><span>和</span><strong><span>intyë</span></strong><span>的区别，类似于yourself和thyself。</span></font></p><p><font color = slategrey><span>注释2：以上反身代词只能指代人称代词，指代名词时则用</span><strong><span>immo</span></strong><span>/</span><strong><span>imma</span></strong><span>，前者指人，后者指其他事物。</span></font></p></blockquote><p><span>	</span></p><hr /><h3 id='iii-人称代词后缀'><span>III. 人称代词后缀</span></h3><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><strong><span>-nyë</span></strong><span> (</span><strong><span>-n</span></strong><span>)</span></td><td style='text-align:center;' ><strong><span>-llë</span></strong><span> (</span><strong><span>-l</span></strong><span>)</span></td><td style='text-align:center;' ><strong><span>-së</span></strong><span> (</span><strong><span>-s</span></strong><span>)</span></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><strong><span>-lvë</span></strong><span> (incl.) / </span><strong><span>-lmë</span></strong><span> (excl.)</span></td><td style='text-align:center;' ><strong><span>-lyë</span></strong><span> (</span><strong><span>-l</span></strong><span>)</span></td><td style='text-align:center;' ><strong><span>-ntë</span></strong><span> (主格)，</span><strong><span>-t</span></strong><span> (宾格)</span></td></tr></tbody></table></figure><blockquote><p><font color = slategrey><span>注释1：第二人称单数代词也可用</span><strong><span>-lyë</span></strong><span>作为结尾，它和</span><strong><span>-llë</span></strong><span>的区别类似于thou和you。</span></font></p><p><font color = slategrey><span>注释2：当代词后缀的后面不再有其他后缀时，可以使用括号中标注的缩略形式。</span></font></p></blockquote><p><span>	</span></p><hr /><h3 id='iv-物主代词后缀'><span>IV. 物主代词后缀</span></h3><figure><table><thead><tr><th style='text-align:center;' >&nbsp;</th><th style='text-align:center;' ><span>第一人称</span></th><th style='text-align:center;' ><span>第二人称</span></th><th style='text-align:center;' ><span>第三人称</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>单数</span></td><td style='text-align:center;' ><strong><span>-nya</span></strong></td><td style='text-align:center;' ><strong><span>-lya</span></strong></td><td style='text-align:center;' ><strong><span>-rya</span></strong></td></tr><tr><td style='text-align:center;' ><span>复数</span></td><td style='text-align:center;' ><strong><span>-lva</span></strong><span> (incl.) / </span><strong><span>-lma</span></strong><span> (excl.)</span></td><td style='text-align:center;' ><strong><span>-lya</span></strong></td><td style='text-align:center;' ><strong><span>-nta</span></strong></td></tr></tbody></table></figure><blockquote><p><font color = slategrey><span>注释：对于物主代词后缀与其他后缀冲突的情况，详见</span><a href='https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/6.html#%E5%90%8E%E7%BC%80%E5%86%B2%E7%AA%81'><span>名词的格变换、介词-名词的格变换-后缀冲突</span></a><span>。</span></font></p></blockquote><p>&nbsp;</p><hr /><h3 id='v-不定代词'><span>V. 不定代词</span></h3><p><strong><span>quen</span></strong><span> &quot;one&quot;。</span></p><p>&nbsp;</p><hr /><h3 id='vi-指示代词'><span>VI. 指示代词</span></h3><ul><li><span>作代词：</span><strong><span>sin</span></strong><span> &quot;this&quot;，</span><strong><span>ta</span></strong><span>&quot;that&quot;。</span></li><li><span>作形容词：</span><strong><span>sina</span></strong><span> &quot;this&quot;，</span><strong><span>tana</span></strong><span> &quot;that&quot;，</span><strong><span>enta</span></strong><span> &quot;that&quot; （空间上高度远离对话双方），</span><strong><span>yana</span></strong><span> &quot;that&quot; （时间上高度远离说话双方）。</span></li></ul><blockquote><p><span>	</span><font color = slategrey><span>注释：作形容词时的这四个词</span><strong><span>sina</span></strong><span>，</span><strong><span>tana</span></strong><span>，</span><strong><span>enta</span></strong><span>和</span><strong><span>yana</span></strong><span>永远放在中心词后面。</span></font></p></blockquote><p><span>  </span><span>		</span></p><hr /><h3 id='vii-限定词'><span>VII. 限定词</span></h3><ul><li><strong><span>ilya</span></strong><span> &quot;each, all, every&quot;</span></li><li><strong><span>ilu</span></strong><span> &quot;everything&quot;</span></li><li><strong><span>ma</span></strong><span> &quot;something, anyone&quot;</span></li><li><strong><span>munta</span></strong><span> &quot;nothing&quot;</span></li><li><strong><span>ilquen</span></strong><span> &quot;everyone&quot;</span></li><li><strong><span>mo</span></strong><span> &quot;someone, anyone&quot;</span></li><li><strong><span>alaquen</span></strong><span> &quot;no one&quot; </span><span>*</span></li><li><strong><span>aiquen</span></strong><span> &quot;whoever&quot;</span></li><li><strong><span>quië</span></strong><span> &quot;whenever&quot;</span></li><li><strong><span>aiqua</span></strong><span> &quot;whatever&quot; </span><span>*</span></li><li><strong><span>aimanen</span></strong><span> &quot;however&quot; </span><span>*</span></li><li><strong><span>nótima</span></strong><span> &quot;some&quot; （只用作形容词）</span></li><li><strong><span>exa</span></strong><span> &quot;other&quot; （只用作形容词）</span></li><li><strong><span>exë</span></strong><span> &quot;another&quot;</span></li><li><strong><span>i exë</span></strong><span> &quot;the other&quot;</span></li></ul><blockquote><p><font color = slategrey><span>注释：标星号者，均由后人根据Quenya构词法自创，其准确性有待考证。</span></font></p></blockquote><p>&nbsp;</p><hr /><p><a href='https://david-dhc.github.io/Quenya-Textbooks-in-Mandarin/'><span>返回首页</span></a></p></div></div>
+
+<script>(function(){var e=document.body.parentElement,t=[],n=null,i=document.body.classList.contains("typora-export-collapse-outline"),r=function(e,t,n){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var i=e.target;i&&i!=this;i=i.parentNode)if(i.matches(t)){!1===n.call(i,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)};function o(){return e.scrollTop}r("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),d(),!1}),r("click",".outline-item",function(e){var t=this.querySelector(".outline-label");if(location.hash="#"+t.getAttribute("href"),i){var n=this.closest(".outline-item-wrapper").classList;n.contains("outline-item-open")||n.add("outline-item-open"),c(),n.add("outline-item-active")}});var a,s,l=function(){var e=o();n=null;for(var i=0;i<t.length&&t[i][1]-e<60;i++)n=t[i]},c=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},d=function(){if(n){c();var e=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(n[0]):n[0])+'"]');if(e)if(i){var t=e.closest(".outline-item-open>ul>.outline-item-wrapper");if(t)t.classList.add("outline-item-active");else{for(var r=(e=e.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");r;)r=(e=r).parentElement.closest(".outline-item-wrapper");e.classList.add("outline-item-active")}}else e.closest(".outline-item-wrapper").classList.add("outline-item-active")}};window.addEventListener("scroll",function(e){a&&clearTimeout(a),a=setTimeout(function(){l(),d()},300)});var u=function(){s=setTimeout(function(){!function(){t=[];var e=o();document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(n=>{var i=n.getAttribute("id");t.push([i,e+n.getBoundingClientRect().y])})}(),l(),d()},300)};window.addEventListener("resize",function(e){s&&clearTimeout(s),u()}),u()})();</script></body>
 </html>
